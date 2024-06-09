@@ -1,0 +1,44 @@
+{
+  "name": "koishi-plugin-miniplug",
+  "description": "Code single-file JavaScript plugins in your Koishi console",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DGCK81LNN/koishi-plugin-miniplug",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGCK81LNN/koishi-plugin-miniplug.git"
+  },
+  "keywords": [
+    "koishi",
+    "plugin"
+  ],
+  "koishi": {
+    "description": {
+      "zh": "在 Koishi 控制台中编写简单 JavaScript 插件",
+      "en": "Code simple JavaScript plugins in your Koishi console"
+    },
+    "browser": true
+  },
+  "devDependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@koishijs/client": "^5.29.1",
+    "@koishijs/plugin-notifier": "^1.2.0",
+    "codemirror": "^6.0.1"
+  },
+  "peerDependencies": {
+    "@koishijs/plugin-console": "^5.29.1",
+    "koishi": "^4.17.8",
+    "koishi-plugin-codemirror": "^0.0.1"
+  },
+  "dependencies": {
+    "rewrite-exports": "^0.0.28",
+    "rewrite-imports": "^3.0.0"
+  }
+}

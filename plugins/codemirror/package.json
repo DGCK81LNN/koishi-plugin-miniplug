@@ -1,0 +1,39 @@
+{
+  "name": "koishi-plugin-codemirror",
+  "description": "CodeMirror schema role for Koishi Web UI",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DGCK81LNN/koishi-plugin-miniplug/tree/main/plugins/codemirror",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGCK81LNN/koishi-plugin-miniplug.git"
+  },
+  "keywords": [
+    "koishi",
+    "plugin"
+  ],
+  "koishi": {
+    "description": {
+      "zh": "用于 Web UI 的 CodeMirror schema role",
+      "en": "CodeMirror schema role for the Web UI"
+    },
+    "browser": true
+  },
+  "devDependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@koishijs/client": "^5.29.1",
+    "codemirror": "^6.0.1"
+  },
+  "peerDependencies": {
+    "@koishijs/plugin-console": "^5.29.1",
+    "koishi": "^4.17.8"
+  }
+}
