@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-codemirror",
   "description": "CodeMirror schema role for Koishi Web UI",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -29,11 +29,11 @@
     "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/lang-json": "^6.0.1",
     "@codemirror/theme-one-dark": "^6.1.2",
-    "@koishijs/client": "^5.29.1",
+    "@koishijs/client": "^5.29.2",
     "codemirror": "^6.0.1"
   },
   "peerDependencies": {
-    "@koishijs/plugin-console": "^5.29.1",
-    "koishi": "^4.17.8"
+    "@koishijs/plugin-console": "^5.29.2",
+    "koishi": "^4.17.9"
   }
 }

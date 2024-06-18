@@ -7,7 +7,7 @@ import "virtual:uno.css"
 
 export default (ctx: Context) => {
   // @ts-ignore
-  ctx.schema.component({
+  ctx.schema({
     type: "string",
     role: "codemirror",
     component: CodeMirror,
