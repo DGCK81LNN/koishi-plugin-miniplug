@@ -8,9 +8,7 @@ export const filter = false
 
 export interface Config {}
 
-export const Config: Schema<Config> = Schema.object({
-  //test: Schema.string().role("codemirror").description("测试"),
-})
+export const Config: Schema<Config> = Schema.object({})
 
 export function apply(ctx: Context) {
   ctx.console.addEntry({

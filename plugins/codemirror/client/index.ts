@@ -6,7 +6,6 @@ import CodeMirror from "./components/codemirror.vue"
 import "virtual:uno.css"
 
 export default (ctx: Context) => {
-  // @ts-ignore
   ctx.schema({
     type: "string",
     role: "codemirror",
