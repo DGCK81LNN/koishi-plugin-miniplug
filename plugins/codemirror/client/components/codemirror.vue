@@ -47,6 +47,11 @@
     <div class="bottom" ref="parent"></div>
   </schema-base>
 </template>
+<style scoped>
+.bottom > * {
+  max-height: 60vh;
+}
+</style>
 <script setup lang="ts">
 import {
   indentLess,
