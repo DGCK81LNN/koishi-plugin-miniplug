@@ -25,6 +25,9 @@
     },
     "browser": true
   },
+  "scripts": {
+    "prepare": "cp ../../LICENSE ."
+  },
   "devDependencies": {
     "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/theme-one-dark": "^6.1.2",
