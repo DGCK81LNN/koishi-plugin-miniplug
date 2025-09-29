@@ -63,6 +63,7 @@ import {
 } from "@codemirror/commands"
 import { javascript } from "@codemirror/lang-javascript"
 import { json } from "@codemirror/lang-json"
+import { yaml } from "@codemirror/lang-yaml"
 import { searchPanelOpen, closeSearchPanel, openSearchPanel } from "@codemirror/search"
 import { Compartment, EditorState } from "@codemirror/state"
 import { oneDark } from "@codemirror/theme-one-dark"
@@ -90,6 +91,7 @@ const disable = new Compartment()
 const languagePlugs = computed(() => {
   const lang = props.schema.meta.extra?.lang
   if (lang === "json") return json()
+  if (lang === "yaml" || lang === "yml") return yaml()
   return javascript()
 })
 const disablePlugs = computed(() => {

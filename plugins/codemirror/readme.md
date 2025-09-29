@@ -18,4 +18,4 @@ export const Config: Schema<Config> = Schema.object({
 
 ![](images/screenshot.png)
 
-`.role("codemirror")` 还接受第二参数 `extra`，目前，唯一有效的值为 `{ lang: "json" }`，可将编辑语言改为 JSON。
+`.role("codemirror")` 还接受第二参数 `extra`，接受一个带有 `lang` 属性的对象，可更改编辑语言，目前支持的值有 `json`、`yaml`/`yml`。
