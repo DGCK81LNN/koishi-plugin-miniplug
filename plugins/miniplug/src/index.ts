@@ -1,8 +1,7 @@
 import type {} from "@koishijs/plugin-notifier"
 import { Context, Schema } from "koishi"
-import rewriteExports from "rewrite-exports"
-import { rewrite as rewriteImports } from "rewrite-imports"
 import { inspect } from "util"
+import esmToCjs from "@dgck81lnn/esm-to-cjs"
 
 export const name = "miniplug"
 export const inject = { optional: ["notifier"] }
@@ -27,16 +26,18 @@ export function apply(ctx) {
 })
 
 export function apply(ctx: Context, config: Config) {
+  const exports = {} as any
   let expose = {
     module: {
-      exports: {} as any,
+      exports,
     },
+    exports,
     require,
   }
   try {
     const pluginFunction = new Function(
       "{ " + Object.keys(expose).join(", ") + " }",
-      rewriteExports(rewriteImports(config.code))
+      esmToCjs(config.code)
     )
     pluginFunction.call({}, expose)
     const plugin = expose.module.exports

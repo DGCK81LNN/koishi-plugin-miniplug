@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-miniplug",
   "description": "Code single-file JavaScript plugins in your Koishi console",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -41,7 +41,6 @@
     "koishi-plugin-codemirror": ">=0.0.2 <0.1.0"
   },
   "dependencies": {
-    "rewrite-exports": "^0.0.28",
-    "rewrite-imports": "^3.0.0"
+    "@dgck81lnn/esm-to-cjs": "^0.2.0"
   }
 }
