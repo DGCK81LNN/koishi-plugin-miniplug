@@ -51,7 +51,7 @@ export function apply(ctx: Context, config: Config) {
     const plugin = ctx.registry.resolve(mod?.default) ? mod.default : mod
     ctx.plugin(plugin, loadConfig())
   } catch (e) {
-    ctx.logger.error(e)
+    ctx.logger.error("%o", e)
     ctx.notifier?.create({
       type: "danger",
       content:
